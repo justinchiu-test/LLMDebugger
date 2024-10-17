@@ -1,0 +1,23 @@
+[project]
+name = "ldb"
+version = "0.1.0"
+description = "LLM debugger"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jsonlines==3.1.0",
+    "openai==1.12.0",
+    "datasets",
+    "tenacity==8.1.0",
+    "astunparse",
+    "transformers",
+    "accelerate",
+    "astor",
+    "graphviz",
+    "vllm",
+    "astroid",
+]
+
+[build-system]
+requires = ["hatchling", "hatch-requirements-txt"]
+build-backend = "hatchling.build"
